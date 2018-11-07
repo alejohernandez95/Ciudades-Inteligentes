@@ -1,8 +1,10 @@
 'use strict'
+///////////////libreria npm
 const mongoose= require('mongoose')
 const Schema = mongoose.Schema
-const bcrypt = require('bcrypt-nodejs')
+const bcrypt = require('bcrypt-nodejs')//libreria para encriptar
 const crypto= require ('crypto')
+//////////////se crea un nuevo esquema
 const UserSchema = new Schema({
   email: {type:String, unique: true, lowercase:true},
   displayName:String,
@@ -11,6 +13,7 @@ const UserSchema = new Schema({
   signupDate: {type: Date, default: Date.now()},
   lastLogin: Date,
 })
+//para encriptar contraseña
 UserSchema.pre('save',(next)=> {
   let user = this
   if  (!user.isModified('password')) return next()
@@ -23,9 +26,11 @@ UserSchema.pre('save',(next)=> {
     })
   })
 })
+//para poner un avatar
 UserSchema.methods.gravatar = function (){
   if (!this.email) return `https://gravatar.com/avatar/?s=200&d=retro`
   const md5 = crypto.createHash('md5').update(this.email).digest('hex')
   return `https://gravatar.com/avatar/${md5}?s=200&d=retro`
 }
 module.exports = mongoose.model('user,UserSchema')
+//////////////////////HECHO POR ALEJANDRO HERNANDEZ CASTAÑEDA
