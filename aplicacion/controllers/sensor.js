@@ -2,7 +2,7 @@
 ///////////////////////////////libreria interna////////////////////////////////////////////////////////////////
 const Sensor = require ('../models/sensor')
 ////////////mostrar los datos de un sensor con su ID
-function getSensor(req, res){
+function getSensorID(req, res){
   let sensorId = req.params.sensorId
   Sensor.findById(sensorId, (err, sensor) =>{
     if(err) return res.status(500).send({message: `error al encontrar los datos: ${err}`})
@@ -88,7 +88,7 @@ function deleteAll(req, res){
 }
 //////////////////////////////////////////////////////////////////////////////////////
 module.exports={
-  getSensor,
+  getSensorID,
   getSensor,
   getUbicacion,
   getAño,

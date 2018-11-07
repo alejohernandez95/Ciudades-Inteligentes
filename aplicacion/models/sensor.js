@@ -4,14 +4,15 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 ///////////////////////////////////////////////////////////////////
 const SensorSchema = Schema ({
-  ubicacion: {type: Number, default: 0},
-  hora: {type: Number, default: 0},
+  ubicacion: {type: Number, default: 0},// se define de 1 a 25 segun la zona de la ciudad
+  ////////los datos hora dia mes y año sera remplazado por //date: {type: Date}
+  hora: {type: Number, default: 0},// de momento se usa hora militar del 0 al 24
   dia: {type: Number, default: 0},
-  mes: {type: Number, default: 0},
+  mes: {type: Number, default: 0},//del 1 al 12
   año: {type: Number, default: 0},
-  rayosuv: {type: Number, default: 0},
-  sonido: {type: Number, default: 0},
-  gases: {type: Number, default: 0},
+  rayosuv: {type: Number, default: 0},//fuerza de los rayos uv
+  sonido: {type: Number, default: 0},// fuerza del sonido
+  gases: {type: Number, default: 0},//fuerza de los gases contaminantes
 })
 module.exports = mongoose.model('Sensor', SensorSchema)
 //////////////////////HECHO POR ALEJANDRO HERNANDEZ CASTAÑEDA
