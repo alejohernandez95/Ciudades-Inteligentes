@@ -19,17 +19,17 @@ function getSensor(req, res){
     res.send(200, {sensor})
   })
 }
-///////mostrar los datos segun su ubicacion /////////no funciona arreglar
+///////mostrar los datos segun su ubicacion /////////no funciona arreglar//////
 function getUbicacion(req, res){
-  let sensorId = req.Sensor.ubicacion
-  Sensor.find(sensorId, (err, sensor) =>{
+  let sensorU = Sensor.ubicacion
+  Sensor.find(sensorU, (err, sensor) =>{
     if(err) return res.status(500).send({message: `error al encontrar los datos: ${err}`})
     if(!sensor) return res.status(404).send({message: `los datos del sensor no existe`})
 
     res.status(200).send({ sensor})
   })
 }
-///////mostrar los datos segun su año /////////no funciona arreglar
+///////mostrar los datos segun su año /////////no funciona arreglar//////
   function getAño(req, res){
   let sensorId = req.Sensor.año
   Sensor.find(sensorId, (err, sensor) =>{
@@ -80,6 +80,12 @@ function deleteSensor(req, res){
     })
   })
 }
+//////////borra todo//no probado
+function deleteAll(req, res){
+  Sensor.find({},(err,sensor)=>{
+    sensor.remove
+  })
+}
 //////////////////////////////////////////////////////////////////////////////////////
 module.exports={
   getSensor,
@@ -89,5 +95,6 @@ module.exports={
   saveSensor,
   updateSensor,
   deleteSensor,
+  deleteAll,
 }
 //////////////////////HECHO POR ALEJANDRO HERNANDEZ CASTAÑEDA
