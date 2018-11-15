@@ -18,6 +18,7 @@ api.delete('/sensor',SensorCtrl.deleteAll)//borra todo los datos
 api.post('/signin', UserCtrl.signIn)
 api.post('/signup', UserCtrl.signUp)
 ///autentificar usuarios a cierto url
+///se agrega auth para el metodo autentificar
 api.get('/private', auth , (req, res) => {
   res.status(200).send({message: 'tienes acceso'})
 })

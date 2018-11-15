@@ -21,8 +21,8 @@ function getSensor(req, res){
 }
 ///////mostrar los datos segun su ubicacion /////////no funciona arreglar//////
 function getUbicacion(req, res){
-  let sensorU = Sensor.ubicacion
-  Sensor.find(sensorU, (err, sensor) =>{
+  let sensorId = req.params.sensorId
+  Sensor.findById(sensorId, (err, sensor) =>{
     if(err) return res.status(500).send({message: `error al encontrar los datos: ${err}`})
     if(!sensor) return res.status(404).send({message: `los datos del sensor no existe`})
 
@@ -31,7 +31,7 @@ function getUbicacion(req, res){
 }
 ///////mostrar los datos segun su año /////////no funciona arreglar//////
   function getAño(req, res){
-  let sensorId = req.Sensor.año
+  let sensorId = req.sensor()(2)
   Sensor.find(sensorId, (err, sensor) =>{
     if(err) return res.status(500).send({message: `error al encontrar los datos: ${err}`})
     if(!sensor) return res.status(404).send({message: `los datos del sensor no existe`})

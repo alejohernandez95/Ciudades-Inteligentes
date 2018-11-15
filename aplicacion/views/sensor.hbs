@@ -1,0 +1,20 @@
+<script type="text/javascript">
+ let sensorList = document.createElement('ul')
+ const myHeaders = new Headers();
+ myHeaders.append('authorization', `bearer ${localStorage.token}`)
+ fetch ('/api/sensor',{
+   method 'GET',
+   headers: myHeaders,
+ })
+ .then(res => res.json())
+ .then(data => {
+   data.sensor.map(sensor => {
+     let text = document.createTextNode(sensor.name)
+     let elem = document.createElement('li')
+     elem.appendChild(text)
+     sensorList.appendChild(elem)
+   })
+   document.body.appendChild(sensorList)
+ })
+
+</script>
