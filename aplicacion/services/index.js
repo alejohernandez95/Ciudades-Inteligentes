@@ -14,6 +14,29 @@ function createToken (user){
   //codifica
   return jwt.encode(payload, config.SECRET_TOKEN)
 }
+function decodeToken (token){
+  const decoded= new Promise((resolve, reject) =>{
+    try {
+      const payload= jwt.decode(token, config.SECRET_TOKEN)
+      if(payload.exp <= moment().unix()){
+        resolve({
+          status: 401,
+          message: 'el token ha expirado'
+        })
+      }
+      resolve(payload.sub)
+    } catch (err){
+      reject({
+        status: 500,
+        message: 'Invalid Token'
+      })
+    }
+  })
+  return decoded
+}
 
-module.exports = createToken
+module.exports = {
+  createToken,
+  decodeToken,
+}
 //////////////////////HECHO POR ALEJANDRO HERNANDEZ CASTAÑEDA
