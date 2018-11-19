@@ -6,7 +6,7 @@ const UserCtrl = require ('../controllers/user')
 const auth = require('../middlewares/auth')
 const api = express.Router()
 //////////////////////////////////////////////////////////////////////////////controladores
-api.get('/sensor', SensorCtrl.getSensor)// muestra los datos globales
+api.get('/sensor', auth, SensorCtrl.getSensor)// muestra los datos globales
 api.get('/sensor/:sensorId',SensorCtrl.getSensorID)/////////////busca segun el id de los datos
 api.get('/sensor/ubicacion/:sensorU',SensorCtrl.getUbicacion)///////////busca segun getUbicacion
 api.get('/sensor/año/:sensorA',SensorCtrl.getAño)//////busca segun año
@@ -24,4 +24,4 @@ api.get('/private', auth , (req, res) => {
 })
 ////////////////////////////////////////////////////////////////
 module.exports = api
-//////////////////////HECHO POR ALEJANDRO HERNANDEZ CASTAÑEDA
+/////////////////////HECHO POR ALEJANDRO HERNANDEZ CASTAÑEDA

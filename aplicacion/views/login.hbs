@@ -1,10 +1,20 @@
+
+
+<link rel="style" type="text/css" href="../css/estilos.css" />
+
 <form id="login" method="post">
+  <label for="email">Email</label><br>
   <input type="email" name="email" value="" placeholder="Tu Email">
   <br><br>
+  <label for="password">Contraseña</label><br>
   <input type="password" name="password" value="" placeholder="Tu Contraseña">
   <br><br>
   <input type="submit" value="Login">
+  <img  src="./img/logo.png" id="avatar" alt="Avatar Image"/>
+  <img src="logo.png" alt="image">
 </form>
+
+
 
 <script type="text/javascript">
   const formLogin = document.querySelector('#login')
@@ -20,4 +30,5 @@
       localStorage.setItem('token', data.token)
     })
   })
+  
 </script>
