@@ -1,0 +1,11 @@
+>npm install -g cordova 
+>npm install -g cordova ionic 
+>npm install
+>npm install @ionic-native/google-maps @ionic-native/core
+>ionic cordova plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="AIzaSyAYabeBK39rmEP2jfBqNyB4ipl_olBw_QQ" --variable API_KEY_FOR_IOS="AIzaSyAYabeBK39rmEP2jfBqNyB4ipl_olBw_QQ"
+>ionic cordova run browser
+
+
+
+>ionic start myapp sidemenu
+>ionic start myapp tabs

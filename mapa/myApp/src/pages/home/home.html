@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    
+    <ion-title ><b aling="center">Mapa<img src="../../assets/imgs/logoCY.png"  alt="logoCY" id="logoCY"></b></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div id="map_canvas">
+      
+    <img src="../../assets/imgs/logoCY.png" alt="logoCY" id="logoCY">
+
+    <b><button ion-button (click)="onButtonClick($event)">CALI</button></b>
+  </div>
+  <h2>datos servidor local</h2>
+  <ion-list>
+    <button ion-item *ngFor="let sensor of sensor">
+      {{sensor.ubicacion}} - {{sensor.hora}}
+    </button>
+  </ion-list>
+</ion-content>
