@@ -1,0 +1,80 @@
+startPage = index.html
+Static file server running @ http://localhost:8001/index.html
+CTRL + C to shut down
+200 /index.html (gzip)
+200 /cordova.js (gzip)
+200 /build/main.js (gzip)
+200 /cordova_plugins.js (gzip)
+200 /build/polyfills.js (gzip)
+200 /plugins/cordova-plugin-device/www/device.js (gzip)
+200 /build/main.css (gzip)
+200 /plugins/cordova-plugin-device/src/browser/DeviceProxy.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/Promise.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/BaseArrayClass.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/BaseClass.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/LatLng.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/LatLngBounds.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/VisibleRegion.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/CameraPosition.js
+200 /plugins/cordova-plugin-googlemaps/www/Location.js
+200 /plugins/cordova-plugin-googlemaps/www/Polyline.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/Marker.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/Polygon.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/HtmlInfoWindow.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/Circle.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/TileOverlay.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/GroundOverlay.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/spherical.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/encoding.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/Common.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/poly.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/Geocoder.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/LocationService.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/event.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/MapTypeId.js
+200 /plugins/cordova-plugin-googlemaps/www/Map.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/KmlOverlay.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/Environment.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/KmlLoader.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/Cluster.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/MarkerCluster.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/geomodel.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/commandQueueExecutor.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/pluginInit.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/Overlay.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/StreetViewPanorama.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/Thread.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/InlineWorker.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/plugin-loader-for-browser.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/www/js_CordovaGoogleMaps-for-browser.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/CordovaGoogleMaps.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginMarker.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginCircle.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginGroundOverlay.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginMap.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginKmlOverlay.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginMarkerCluster.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginPolygon.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginPolyline.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginStreetViewPanorama.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginLocationService.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginTileOverlay.js (gzip)
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginEnvironment.js
+200 /plugins/cordova-plugin-ionic-webview/src/www/util.js
+200 /plugins/cordova-plugin-googlemaps/src/browser/PluginGeocoder.js (gzip)
+200 /plugins/cordova-plugin-splashscreen/www/splashscreen.js (gzip)
+200 /plugins/cordova-plugin-firebase/www/firebase-browser.js (gzip)
+200 /plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js (gzip)
+200 /plugins/cordova-plugin-statusbar/www/statusbar.js (gzip)
+200 /plugins/cordova-plugin-statusbar/src/browser/StatusBarProxy.js (gzip)
+200 /build/vendor.js (gzip)
+200 /config.xml (gzip)
+404 /screen
+200 /assets/icon/favicon.ico (gzip)
+200 /assets/fonts/roboto-regular.woff2
+200 /assets/imgs/logoCY.png
+200 /assets/fonts/ionicons.woff2?v=3.0.0-alpha.3
+200 /assets/fonts/roboto-bold.woff2
+200 /assets/fonts/roboto-medium.woff2
+200 /assets/fonts/roboto-light.woff2
+¨Desea terminar el trabajo por lotes (S/N)? 
